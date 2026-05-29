@@ -1,0 +1,48 @@
+/* src/index.css */
+@import "tailwindcss";
+
+@layer utilities {
+  /* Keyframes for custom landing animations */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes slideRight {
+    from { opacity: 0; transform: translateX(-40px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  @keyframes textGlow {
+    0%, 100% { filter: drop-shadow(0 0 10px rgba(59, 130, 246, 0.2)); }
+    50% { filter: drop-shadow(0 0 25px rgba(99, 102, 241, 0.6)); }
+  }
+
+  /* Utility classes to bind animations */
+  .animate-fade-in {
+    animation: fadeIn 1s ease-out forwards;
+  }
+
+  .animate-slide-right {
+    animation: slideRight 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  .animate-glow {
+    animation: textGlow 4s ease-in-out infinite;
+  }
+}
+
+@keyframes loading {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
+
+/* Splash screen ka custom bounce behavior smoothly adjust karne ke liye */
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
