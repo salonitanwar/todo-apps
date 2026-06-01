@@ -1,7 +1,6 @@
 
 import React, { useState } from 'react';
-import { X, Sliders, Eye, Trash2, Palette, Type, Sun, Moon, Shield, Lock, Check } from 'lucide-react';
-
+import { X, Sliders, Eye, Trash2, Palette, Type, Sun, Moon, Shield, Lock } from "lucide-react";
 export default function SettingsModal({ isOpen, onClose, settings, onUpdateSettings }) {
   const [pinInput, setPinInput] = useState('');
   const [isSettingPin, setIsSettingPin] = useState(false);

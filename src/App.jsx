@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-
+// Lucide icons list mein tags ke icons aur baki utility icons hain
 import { 
   Plus, Menu, User, Settings, Trash2, CheckCircle, Circle, 
   Lock, Unlock, Search, Edit3, X, Check, Smile,
@@ -10,10 +10,10 @@ import Background3D from './components/Background3D';
 import TagsList from './components/TagsList';
 import CreateTodoModal from './components/CreateTodoModal';
 import SettingsModal from './components/SettingsModal';
-import SplashScreen from './components/SplashScreen'; 
+import SplashScreen from './components/SplashScreen'; // 🔥 STEP 1: Splash Screen component import kiya
 
 export default function App() {
-  
+  // 🔥 STEP 2: Splash screen ko trigger karne ke liye true state banayi hai
   const [showSplash, setShowSplash] = useState(true);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -259,7 +259,7 @@ export default function App() {
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search task...🔍"
+              placeholder="Search tasks..."
               className="w-full pl-10 pr-4 py-2.5 rounded-xl border backdrop-blur-md focus:outline-none bg-white/5 border-white/10 text-white"
             />
           </div>
