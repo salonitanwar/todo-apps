@@ -13,7 +13,7 @@ import SettingsModal from './components/SettingsModal';
 import SplashScreen from './components/SplashScreen'; // 🔥 STEP 1: Splash Screen component import kiya
 
 export default function App() {
-  // 🔥 STEP 2: Splash screen ko trigger karne ke liye true state banayi hai
+ 
   const [showSplash, setShowSplash] = useState(true);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
